@@ -1,5 +1,47 @@
 *
+
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family : Helvetica, Arial, sans-serif;
-    background-color: grey;
+    background-color: #fff;
+}
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #434141;
+}
+header h1 {
+    display: flex;
+    font-weight: bold;
+    margin: 10px 0 0 30px;
+    font-size: 36px;
+    background: #40e0d0;  
+    text-align: left;  
+}
+header a {
+    color: #40e0d0;
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.55vw;
+}
+/* Hero style Starts */
+.hero {
+    background-image: url('..images/wood-panel.jpg');
 }
