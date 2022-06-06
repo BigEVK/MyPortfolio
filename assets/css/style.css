@@ -1,3 +1,7 @@
+:root {
+    --h1-color: #70747d;
+}
+
 *
 
 {
@@ -10,18 +14,24 @@ body {
     background-color: #fff;
 }
 header {
+    
     padding: 10px;
     display: flex;
+
     justify-content: space-between;
     background-color: #434141;
 }
 header h1 {
+    
+    padding-left: 40px;
     display: flex;
+    /* I added this after the above to move the box content a smidge to the left giving color after the "k" */
+    padding-right: 10px;
     font-weight: bold;
-    margin: 10px 0 0 30px;
+    margin: 0 0 0 -10px;
     font-size: 36px;
-    background: #40e0d0;  
-    text-align: left;  
+    background: #40e0d0;       
+    color: var(--h1-color)
 }
 header a {
     color: #40e0d0;
@@ -44,7 +54,18 @@ header nav ul li a {
 /* Hero style Starts */
 .hero img {
     width: 100%;
-     
-
+    height: 150px; 
+    background-size: cover;
 }
-    
+.content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;    
+}
+.content h1 {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px; 
+    color: var(--h1-color);    
+}
