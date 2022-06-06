@@ -101,8 +101,9 @@ article {
     flex-wrap: wrap;
     flex-direction: column;
         
-    /* background-image: url(../images/qbertbandw.jpg);
-    background-size: 50px; */
+    background-image: url(../images/qbertbandw.jpg);
+    background-size: 50px;
+    
 }
 
 .support {
