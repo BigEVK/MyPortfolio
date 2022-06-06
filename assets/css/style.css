@@ -69,3 +69,46 @@ header nav ul li a {
     padding-right: 20px; 
     color: var(--h1-color);    
 }
+.work {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 200px;
+    margin-left: 10%;
+}
+.work h1 {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px; 
+    color: var(--h1-color); 
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    background: #40e0d0;
+}
+/* article:nth-of-type(1) {
+    flex: 2;
+} */
+.surfreport {
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+        
+    /* background-image: url(../images/qbertbandw.jpg);
+    background-size: 50px; */
+}
+
+.support {
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
