@@ -1,7 +1,8 @@
 :root {
     --h1-color: #70747d;
+    --text-color: #2fb829;
+    --h1change-color: #b8297f;
 }
-
 *
 
 {
@@ -11,7 +12,7 @@
 }
 body {
     font-family : Helvetica, Arial, sans-serif;
-    background-color: #fff;
+    background-color: rgb(196, 187, 187);
 }
 header {
     
@@ -77,7 +78,7 @@ header nav ul li a {
     width: 80%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex: 200px;
     margin-left: 10%;
 }
@@ -88,75 +89,72 @@ header nav ul li a {
     color: var(--h1-color); 
 }
 
-article {
+.workbox {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
     padding: 10px;
     margin: 10px;
-    background: #40e0d0;
+    justify-content: space-around;
+    background: #4e6f6c;
 }
-/* article:nth-of-type(1) {
-    flex: 2;
-} */
+
 .workbox {
     width: 500px;
     
 }
-
-
-.surfreport {
+.project {
     padding: 10px;
     height: 60px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-       
-    /* background-image: url(../images/qbertbandw.jpg);
-    background-size: 50px; */
-    
+    flex-direction: column;  
 }
 
-.support {
+.support, .project {
     padding: 10px;
     height: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    margin: 10px;    
+    border: 5px solid rgb(196, 187, 187);
 }
-.runbuddy button {
-    width: 100%;
-    border: none;
-    background: #fce138;
-    color: #024e76;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 15px;
-}
-.runbuddy:hover {
-    background: #3336ff; 
-}
+
+
 .contact-me {
-    padding: 10px;
+    padding-left: 30px;
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    
 }
-.contact-me nav {   
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around; */
-}
-.contact-me nav ul li {
+.phone, .email, .git, .twitt, .link {
     padding: 10px;
-    height: 30px;
+}
+.contact-me h2 {
+    color: var(--h1-color);
+    /* width: 80%; */
+     
+}
+.info {
+    padding-left: 20px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: right;
+    justify-content: space-around;
     align-items: center;
-    list-style: none;
+    
 }
+/* .contact-me div {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: stretch;  
+} */
 
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(107,108,161);
+        color: var(--text-color);
+    }
+    header h1, .content h1, .work h1, .contact-me h2 {
+        color: var(--h1change-color);
+    }
+}
