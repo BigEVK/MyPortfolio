@@ -32,7 +32,7 @@ header h1 {
     margin: 0 0 0 -10px;
     font-size: 36px;
     background: #40e0d0;       
-    color: var(--h1-color)
+    color: var(--h1-color);    
 }
 header a {
     color: #40e0d0;
@@ -72,10 +72,10 @@ header nav ul li a {
     display: flex;
     justify-content: flex-start;
     padding-right: 20px; 
-    color: var(--h1-color);    
+    color: var(--h1-color);       
 }
 .work {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -87,6 +87,7 @@ header nav ul li a {
     justify-content: flex-start;
     padding-right: 20px; 
     color: var(--h1-color); 
+    /* border-right: 2px solid rgb(4, 41, 4); */
 }
 
 .workbox {
@@ -100,38 +101,49 @@ header nav ul li a {
 }
 
 .workbox {
-    width: 500px;
+    width: 700px;
     
 }
 .project {
     padding: 10px;
     height: 60px;
+    width: 700px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;  
 }
-
+.project:hover {
+ background-color:#2fb829;
+}
 .support, .project {
     padding: 10px;
     height: 60px;
     margin: 10px;    
     border: 5px solid rgb(196, 187, 187);
 }
-
+.support:hover {
+    background-color:#050505;
+}
 
 .contact-me {
-    padding-left: 30px;
+    margin-left: .5%;
     width: 80%;
     display: flex;
+    justify-content: space-around;
     
 }
 .phone, .email, .git, .twitt, .link {
-    padding: 10px;
+    padding: 10px;    
 }
+.phone:hover, .email:hover, .git:hover, .twitt:hover, .link:hover {
+    background-color:#2fb829;
+}
+
 .contact-me h2 {
     color: var(--h1-color);
     /* width: 80%; */
-     
+    /* border-right: 2px solid rgb(4, 41, 4);  */
+    padding: 12px;
 }
 .info {
     padding-left: 20px;
@@ -153,8 +165,23 @@ header nav ul li a {
     body {
         background-color: rgb(107,108,161);
         color: var(--text-color);
+        font-size: 125%;
     }
     header h1, .content h1, .work h1, .contact-me h2 {
         color: var(--h1change-color);
+    }
+    header nav ul li a {
+        color: var(--h1change-color);
+        font-size: 125%;
+    }
+    .support, .project {
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;         
+        width: 100%;            
+    }
+    .support:hover, .project:hover {
+        color: black;
     }
 }
