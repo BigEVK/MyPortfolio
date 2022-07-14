@@ -144,6 +144,11 @@ header nav ul li a {
 .supportOne {
     display: flex;
     flex-direction: column;
+    
+}
+.supportOnePtZero {
+    background-image: url("../images/WebsiteImage1.png");
+    opacity: .5;
 }
 .supportTwo {
     display: flex;
