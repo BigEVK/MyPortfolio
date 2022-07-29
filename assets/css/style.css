@@ -136,23 +136,30 @@ header nav ul li a {
     width: 315px;
     margin: 10px;    
     border: 5px solid rgb(196, 187, 187);
+    opacity: .5;
 }
 .support:hover {
     background-color:#050505;
+    opacity: 1.0;
 }
 
 .supportOne {
-    display: flex;
-    flex-direction: column;
-    
+    display: flex;       
 }
-.supportOnePtZero {
+.supportOnePtZero {    
+    padding: 10px;
+    height: 80px;
+    width: 315px;
+    margin: 10px;    
+    border: 5px solid rgb(196, 187, 187);
     background-image: url("../images/WebsiteImage1.png");
     opacity: .5;
 }
+.supportOnePtZero:hover {
+    opacity: 1.0;    
+}
 .supportTwo {
-    display: flex;
-    flex-direction: column;
+    display: flex;    
 }
 
 .contact-me {
