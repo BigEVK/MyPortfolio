@@ -1,7 +1,7 @@
 :root {
     --h1-color: #70747d;
-    --text-color: #2fb829;
-    --h1change-color: #b8297f;
+    --text-color: #70747d;
+    --h1change-color: #70747d;
 }
 *
 
@@ -173,7 +173,7 @@ header nav ul li a {
     padding: 10px;    
 }
 .phone:hover, .email:hover, .git:hover, .twitt:hover, .link:hover {
-    background-color:#2fb829;
+    background-color:#414341;
 }
 
 .contact-me h2 {
@@ -200,7 +200,7 @@ header nav ul li a {
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: rgb(107,108,161);
+        background-color: rgb(196, 187, 187);
         color: var(--text-color);
         font-size: 125%;
     }
