@@ -104,6 +104,7 @@ header nav ul li a {
     margin: 10px;    
     /* background: #4e6f6c; */
     background: #494d4daf;
+    border-radius: 15px;
 }
 .workBoxItems {
     display: flex;
@@ -124,6 +125,7 @@ header nav ul li a {
     background-image: url("../images/runBuddyBackground.png");
     background-size: cover;
     opacity: 0.5;
+    border-radius: 15px;
 } 
 
 .project:hover {
@@ -137,6 +139,7 @@ header nav ul li a {
     margin: 10px;    
     border: 5px solid rgb(196, 187, 187);
     opacity: .5;
+    border-radius: 15px;
 }
 .support:hover {
     background-color:#050505;
@@ -154,6 +157,7 @@ header nav ul li a {
     border: 5px solid rgb(196, 187, 187);
     background-image: url("../images/WebsiteImage1.png");
     opacity: .5;
+    border-radius: 15px;
 }
 .supportOnePtZero:hover {
     opacity: 1.0;    
